@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @medium.title %>
+</p>
+
+<p>
+  <b>Speaker:</b>
+  <%= @medium.speaker %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @medium.content %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @medium.duration %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @medium.description %>
+</p>
+<p>
+  <b>Uploaded file:</b>
+   <%= video_tag @medium.video.url %>
+ <br/>
+</p>
+
+<%= link_to 'Edit', edit_medium_path(@medium) %> |
+<%= link_to 'Back', media_path %>
